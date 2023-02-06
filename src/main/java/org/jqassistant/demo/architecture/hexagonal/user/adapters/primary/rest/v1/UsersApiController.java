@@ -1,4 +1,4 @@
-package org.jqassistant.demo.architecture.hexagonal.user.adapters.primary.rest;
+package org.jqassistant.demo.architecture.hexagonal.user.adapters.primary.rest.v1;
 
 import java.util.List;
 

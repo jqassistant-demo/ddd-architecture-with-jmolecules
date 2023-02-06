@@ -130,7 +130,7 @@
                             <configOptions>
                                 <BasePath>klais</BasePath>
                             </configOptions>
-                            <inputSpec>${project.basedir}/src/main/resources/api/v1/users.yml</inputSpec>
+                            <inputSpec>${project.basedir}/src/main/resources/adapters/primary/rest/v1/users.yml</inputSpec>
                             <apiPackage>org.jqassistant.demo.architecture.hexagonal.user.adapters.primary.rest.v1.users</apiPackage>
                             <modelPackage>org.jqassistant.demo.architecture.hexagonal.user.adapters.primary.rest.v1.users.model</modelPackage>
                         </configuration>

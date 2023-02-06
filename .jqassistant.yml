@@ -7,5 +7,4 @@ jqassistant:
     rule:
       default-concept-severity: INFO
     groups:
-      - jmolecules-layered:Strict
       - jmolecules-ddd:Strict

@@ -1,4 +1,4 @@
-package org.jqassistant.demo.architecture.hexagonal;
+package org.jqassistant.demo.architecture.hexagonal.user.adapters.primary.rest.v1;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
