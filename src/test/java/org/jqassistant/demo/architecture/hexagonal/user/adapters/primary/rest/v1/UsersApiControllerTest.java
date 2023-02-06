@@ -29,6 +29,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 public class UsersApiControllerTest {
 
+    public static final String REST_V1_USERS = "/rest/v1/users";
     @MockBean
     private UserApplicationService userApplicationService;
 
@@ -64,21 +65,21 @@ public class UsersApiControllerTest {
 
     @Test
     void createAndFindUser() throws Exception {
-        this.mockMvc.perform(put("/api/v1/users").contentType(APPLICATION_JSON)
+        this.mockMvc.perform(put(REST_V1_USERS).contentType(APPLICATION_JSON)
                         .content("{ \"email\": \"foo.bar@example.com\", \"firstName\": \"Foo\", \"lastName\": \"Bar\" }")
                         .accept(APPLICATION_JSON))
                 .andExpect(status().isCreated());
 
         verify(userApplicationService).save(any(User.class));
 
-        this.mockMvc.perform(get("/api/v1/users").accept(APPLICATION_JSON))
+        this.mockMvc.perform(get(REST_V1_USERS).accept(APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(APPLICATION_JSON))
                 .andExpect(jsonPath("$", hasSize(1)));
 
         verify(userApplicationService).findAll();
 
-        this.mockMvc.perform(get("/api/v1/users/0").accept(APPLICATION_JSON))
+        this.mockMvc.perform(get(REST_V1_USERS + "/0").accept(APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(APPLICATION_JSON))
                 .andExpect(jsonPath("id", equalTo(0)))
@@ -91,7 +92,7 @@ public class UsersApiControllerTest {
 
     @Test
     void getNonExistingUser() throws Exception {
-        this.mockMvc.perform(get("/api/v1/users/0").accept(APPLICATION_JSON))
+        this.mockMvc.perform(get(REST_V1_USERS + "/0").accept(APPLICATION_JSON))
                 .andExpect(status().isNotFound());
     }
 

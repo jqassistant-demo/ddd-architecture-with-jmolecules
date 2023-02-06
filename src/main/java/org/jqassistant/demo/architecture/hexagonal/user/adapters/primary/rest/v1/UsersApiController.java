@@ -19,7 +19,7 @@ import static org.springframework.http.HttpStatus.CREATED;
  */
 @PrimaryAdapter
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/rest/v1")
 @RequiredArgsConstructor
 public class UsersApiController implements UsersApi {
 
