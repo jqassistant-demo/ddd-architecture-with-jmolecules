@@ -3,8 +3,8 @@ package org.jqassistant.demo.architecture.hexagonal.user.adapters.secondary.data
 import javax.persistence.EntityManager;
 
 import org.jmolecules.architecture.hexagonal.SecondaryAdapter;
-import org.jqassistant.demo.architecture.hexagonal.user.domain.UserRepository;
-import org.jqassistant.demo.architecture.hexagonal.user.domain.model.User;
+import org.jqassistant.demo.architecture.hexagonal.user.application.ports.secondary.UserRepository;
+import org.jqassistant.demo.architecture.hexagonal.user.domain.User;
 import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
 import org.springframework.stereotype.Repository;
 

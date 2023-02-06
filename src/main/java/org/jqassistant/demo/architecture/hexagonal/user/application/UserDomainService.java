@@ -1,10 +1,11 @@
-package org.jqassistant.demo.architecture.hexagonal.user.domain;
+package org.jqassistant.demo.architecture.hexagonal.user.application;
 
 import java.util.List;
 import java.util.Optional;
 
 import lombok.RequiredArgsConstructor;
-import org.jqassistant.demo.architecture.hexagonal.user.domain.model.User;
+import org.jqassistant.demo.architecture.hexagonal.user.application.ports.secondary.UserRepository;
+import org.jqassistant.demo.architecture.hexagonal.user.domain.User;
 import org.springframework.stereotype.Service;
 
 /**

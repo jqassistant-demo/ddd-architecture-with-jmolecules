@@ -4,8 +4,8 @@ import javax.validation.Valid;
 
 import lombok.RequiredArgsConstructor;
 import org.jmolecules.architecture.hexagonal.PrimaryAdapter;
-import org.jqassistant.demo.architecture.hexagonal.user.application.UserApplicationService;
-import org.jqassistant.demo.architecture.hexagonal.user.domain.model.User;
+import org.jqassistant.demo.architecture.hexagonal.user.application.ports.primary.UserApplicationService;
+import org.jqassistant.demo.architecture.hexagonal.user.domain.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;

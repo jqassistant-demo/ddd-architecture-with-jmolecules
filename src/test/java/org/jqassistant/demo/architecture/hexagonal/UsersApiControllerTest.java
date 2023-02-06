@@ -4,8 +4,8 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Optional;
 
-import org.jqassistant.demo.architecture.hexagonal.user.application.UserApplicationService;
-import org.jqassistant.demo.architecture.hexagonal.user.domain.model.User;
+import org.jqassistant.demo.architecture.hexagonal.user.application.ports.primary.UserApplicationService;
+import org.jqassistant.demo.architecture.hexagonal.user.domain.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

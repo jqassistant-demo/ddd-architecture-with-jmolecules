@@ -4,7 +4,7 @@ import java.util.List;
 
 import lombok.RequiredArgsConstructor;
 import org.jmolecules.architecture.hexagonal.PrimaryAdapter;
-import org.jqassistant.demo.architecture.hexagonal.user.application.UserApplicationService;
+import org.jqassistant.demo.architecture.hexagonal.user.application.ports.primary.UserApplicationService;
 import org.jqassistant.demo.architecture.hexagonal.user.adapters.primary.rest.v1.users.UsersApi;
 import org.jqassistant.demo.architecture.hexagonal.user.adapters.primary.rest.v1.users.model.User;
 import org.springframework.http.ResponseEntity;

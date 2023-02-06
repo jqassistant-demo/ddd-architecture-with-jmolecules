@@ -1,4 +1,4 @@
-package org.jqassistant.demo.architecture.hexagonal.user.domain.model;
+package org.jqassistant.demo.architecture.hexagonal.user.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
